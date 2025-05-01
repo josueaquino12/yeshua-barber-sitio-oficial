@@ -457,6 +457,7 @@ text-decoration: 3px solid yellow underline;
 body.loaded .light-box:target {
   display: flex; /* se muestra solo cuando el sitio terminó de cargar y se hace clic */
   transform: scale(1);
+
 }
 
 .light-box img {
