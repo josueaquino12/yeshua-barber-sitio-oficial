@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  :root{
+    --color1: #ffff;
+    --color2: rgba(151, 152, 156, 0.726);
+    --color3: rgba(70, 68, 69, 0.637);
+  }
+  
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+    background:  linear-gradient(to right, rgba(151, 152, 156, 0.726), rgba(70, 68, 69, 0.637)), url('/img/portada-principal/img-portada.webp') no-repeat fixed center/cover;
+  }
+
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Cinzel Decorative", serif;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: "Cinzel Decorative", serif;
+    color: white;
+  }
+  a {
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Cinzel Decorative", serif;
+  }
+  a:hover {
+    background-color: #005fa3;
+  }
