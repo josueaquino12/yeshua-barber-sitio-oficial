@@ -14,6 +14,8 @@ body{
     background-color: black;   
 }
 
+
+
 :root{
   --color1: #ffff;
   --color2: rgba(151, 152, 156, 0.726);
@@ -22,6 +24,7 @@ body{
 
   #portada-principal{
     height: 100vh;
+    min-height: 600px;
     background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-principal/img-portada.webp') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -435,14 +438,14 @@ text-decoration: 3px solid yellow underline;
 /*-----------------Lightbox para aplicar el paso de las imagenes abriendo un popup-------------------*/
 
 .light-box{
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, .5);
   width: 100%;
   height: 100vh;
   z-index: 1000;
-  display: flex;
+  display: none; /*modificado*/
   justify-content: center;
   align-items: center;
   transform: scale(0);
@@ -451,23 +454,37 @@ text-decoration: 3px solid yellow underline;
 
 /*-----------------Ajustar imagenes para ajustar las imagenes------------------------------*/
 
-.light-box img{
-  max-width: 90vw; /* No más ancho que el 90% de la pantalla */
-  max-height: 90vh; /* No más alto que el 90% de la pantalla */
-  display: block;
-  object-fit: contain; /* Ajusta la imagen sin recortarla */
-  border-radius: 5px; /* Suaviza los bordes */
-}
-
-.light-box:target{ 
+body.loaded .light-box:target {
+  display: flex; /* se muestra solo cuando el sitio terminó de cargar y se hace clic */
   transform: scale(1);
 }
 
-.light-box .close{
+.light-box img {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: block;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.lightbox.hidden {
+  display: none;
+}
+
+.lightbox-inner {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.light-box .close {
   position: absolute;
   top: 40px;
   right: 40px;
-  color: #ffff;
+  color: #fff;
   text-decoration: none;
   width: 40px;
   height: 40px;
@@ -484,14 +501,13 @@ text-decoration: 3px solid yellow underline;
   cursor: pointer;
 }
 
-.next:nth-of-type(1) { /* Flecha izquierda */
+.next:nth-of-type(1) {
   left: 5%;
 }
 
-.next:nth-of-type(2) { /* Flecha derecha */
+.next:nth-of-type(2) {
   right: 5%;
 }
-
 /*-----REDES SOCIALES------*/
 
 #redes-sociales{

@@ -76,4 +76,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
 
+    // Evita que el navegador salte al hash prematuramente
+    if (window.location.hash && document.querySelector(window.location.hash)) {
+      const hash = window.location.hash;
+      window.location.hash = '';
+      setTimeout(() => {
+        window.location.hash = hash;
+      }, 0);
+    }
+  });
