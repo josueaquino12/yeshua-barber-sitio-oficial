@@ -25,7 +25,8 @@ body{
   #portada-principal{
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-principal/img-portada.webp') no-repeat center center/cover;
+    /*background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-principal/img-portada.webp') no-repeat center center/cover;*/
+    background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-principal/img-portada.webp') no-repeat center center / cover;
     display: flex;
     justify-content: center;
     align-items: center;
