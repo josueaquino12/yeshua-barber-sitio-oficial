@@ -1,479 +1,694 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Servicios de barbería profesional: cortes, afeitados, arreglo de barba y más. Reserva tu turno en Yeshua Barber"
+    />
 
-    <meta name="description"
-        content="Servicios de barbería profesional: cortes, afeitados, arreglo de barba y más. Reserva tu turno en Yeshua Barber" />
-
-    <meta name="keywords"
-        content="barbería, cortes de pelo hombre, afeitado profesional, arreglo de barba, barbería en san miguel, barbería moderna, corte clásico, barbería premium">
+    <meta
+      name="keywords"
+      content="barbería, cortes de pelo hombre, afeitado profesional, arreglo de barba, barbería en san miguel, barbería moderna, corte clásico, barbería premium"
+    />
 
     <meta name="author" content="Benja Barber" />
 
-    <link rel="icon" type="image/png" href="favicon/logo-oficial-yesha-barber.ico">
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/logo-oficial-yesha-barber.ico"
+    />
 
     <!--link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="styles/styles.css">
     </noscript--->
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
 
-    <link rel="preload" as="image" href="/img/portada-principal/img-portada.webp">
+    <link
+      rel="preload"
+      as="image"
+      href="/img/portada-principal/img-portada.webp"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/img/logo_oficial_yeshua_barber-transparent.png"
+      fetchpriority="high"
+    />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="preload"
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poetsen+One&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poetsen+One&display=swap"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poetsen+One&display=swap">
+      />
     </noscript>
 
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
     </noscript>
 
-    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
+    <link
+      rel="preload"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <noscript>
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     </noscript>
-
 
     <link rel="canonical" href="https://yeshuabarber.netlify.app/" />
 
     <title>Yeshua Barber Pagina Oficial</title>
-</head>
+  </head>
 
-
-
-
-
-
-<body>
-
-
+  <body>
     <!---PORTADA PRINCIPAL-->
     <section id="portada-principal">
-        <header>
-
-            <div class="img-yeshua-nav">
-                <a href=""><img class="logo-resp" loading="lazy" src="/img/logo_oficial_yesha_barber-transparent.png"
-                        alt="logotipo oficial de yeshua barber"></a>
-            </div>
-
-            <nav>
-                <div><button id="abrir-menu" class="abrir-menu" aria-label="Abrir menú"><i
-                            class="fa-solid fa-bars"></i></button></div>
-
-
-                <ul class="nav-items" id="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#sobre-nosotros">Nosotros</a></li>
-                    <li><a href="#nuestros-servicios">Servicios</a></li>
-                    <li><a href="#nuestro-team">Team</a></li>
-                    <li><a href="#ubicacion">Ubicación</a></li>
-                    <li class="redes-items">
-                        <ul>
-                            <li><a href="https://www.instagram.com/yeshua.barberr/" aria-label="Instagram de Yeshua Barber" target="_blank" rel="noopener">
-
-                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                                
-
-                                </a></li>
-
-
-                            <li><a href="https://www.tiktok.com/@benjabarber7" aria-label="Tiktok de Yeshua Barber" target="_blank" rel="noopener">
-
-                                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                                   
-
-                                </a></li>
-
-
-                            <li><a href="https://www.youtube.com/@yeshua.barberr" aria-label="Youtube de Yeshua Barber" target="_blank" rel="noopener">
-
-                                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                                 
-
-                                </a></li>
-
-                        </ul>
-                    </li>
-
-                </ul>
-                <button id="cerrar-menu" class="cerrar-menu"><i class="fa-solid fa-xmark"></i></button>
-
-
-            </nav>
-
-        </header>
-
-        <div class="container_text">
-            <h1 class="text_first_title" data-aos="fade-up">
-                BIENVENIDOS
-            </h1>
-            <a href="https://wa.me/541162840778" target="_blank" rel="noopener" class="button-nav"
-                data-aos="fade-up">Reservá tu
-                turno</a>
+      <header>
+        <div class="img-yeshua-nav">
+          <img
+            class="logo-resp"
+            src="/img/logo_oficial_yeshua_barber-transparent.png"
+            alt="logotipo oficial de yeshua barber"
+            fetchpriority="high"
+            decoding="async"
+          />
         </div>
 
+        <nav>
+          <div>
+            <button id="abrir-menu" class="abrir-menu" aria-label="Abrir menú">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <ul class="nav-items" id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Nosotros</a></li>
+            <li><a href="#nuestros-servicios">Servicios</a></li>
+            <li><a href="#nuestro-team">Team</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li class="redes-items">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/yeshua.barberr/"
+                    aria-label="Instagram de Yeshua Barber"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@benjabarber7"
+                    aria-label="Tiktok de Yeshua Barber"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.youtube.com/@yeshua.barberr"
+                    aria-label="Youtube de Yeshua Barber"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button id="cerrar-menu" class="cerrar-menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </nav>
+      </header>
+
+      <div class="container_text">
+        <h1 class="text_first_title" data-aos="fade-up">BIENVENIDOS</h1>
+        <a
+          href="https://wa.me/541162840778"
+          target="_blank"
+          rel="noopener"
+          class="button-nav"
+          data-aos="fade-up"
+          >Reservá tu turno</a
+        >
+      </div>
     </section>
 
     <!---SOBRE NOSOTROS-->
     <section id="sobre-nosotros">
+      <div class="container">
+        <div class="img-local-sobre-nosotros" data-aos="fade-left"></div>
 
-        <div class="container">
-
-            <div class="img-local-sobre-nosotros" data-aos="fade-left"></div>
-
-            <div>
-                <h2 data-aos="fade-right">Sobre nosotros</h2>
-                <p class="texto-sobre-nosotros" data-aos="fade-right">Somos un equipo de especialistas en belleza
-                    y estética, dedicados a ofrecer servicios
-                    de alta calidad. Nuestra principal
-                    especialidad es la barbería, donde
-                    realizamos cortes de cabello y diseños
-                    modernos. Además, contamos con una amplia
-                    gama de servicios, incluyendo extensiones de
-                    pestañas, manicura, peluquería, peinados,
-                    masajes, colorimetría y trenzas. Estamos
-                    comprometidos con brindarte una
-                    experiencia excepcional, asegurándonos
-                    de que te sientas cómodo y disfrutes al
-                    máximo durante tu visita con nosotros. </p>
-            </div>
+        <div>
+          <h2 data-aos="fade-right">Sobre nosotros</h2>
+          <p class="texto-sobre-nosotros" data-aos="fade-right">
+            Somos un equipo de especialistas en belleza y estética, dedicados a
+            ofrecer servicios de alta calidad. Nuestra principal especialidad es
+            la barbería, donde realizamos cortes de cabello y diseños modernos.
+            Además, contamos con una amplia gama de servicios, incluyendo
+            extensiones de pestañas, manicura, peluquería, peinados, masajes,
+            colorimetría y trenzas. Estamos comprometidos con brindarte una
+            experiencia excepcional, asegurándonos de que te sientas cómodo y
+            disfrutes al máximo durante tu visita con nosotros. 
+          </p>
         </div>
-
+      </div>
     </section>
 
     <!---NUESTRO SERVICIOS-->
     <section id="nuestros-servicios">
-        <div class="container">
-            <h2 data-aos="fade-up">Nuestros servicios</h2>
+      <div class="container">
+        <h2 data-aos="fade-up">Nuestros servicios</h2>
 
-            <div class="servicios">
-
-                <div class="servicio" data-aos="fade-up">
-                    <div class="servicio-card"><span>Barbería</span></div>
-                    <div class="descripcion">
-                        <p>Corte clásico, fades, arreglos de barba, diseño y más.</p>
-                    </div>
-                </div>
-
-                <div class="servicio" data-aos="fade-up">
-                    <div class="servicio-card"><span>Peluquería</span></div>
-                    <div class="descripcion">
-                        <p>Corte, brushing, alisado, tratamientos capilares y más.</p>
-                    </div>
-                </div>
-
-                <div class="servicio" data-aos="fade-up">
-                    <div class="servicio-card"><span>Pestañas</span></div>
-                    <div class="descripcion">
-                        <p>Extensiones clásicas, volumen ruso y lifting.</p>
-                    </div>
-                </div>
-
-                <div class="servicio" data-aos="fade-up">
-                    <div class="servicio-card"><span>Colorimetría</span></div>
-                    <div class="descripcion">
-                        <p>Balayage, iluminaciones, fantasías, y corrección de color.</p>
-                    </div>
-                </div>
-
-                <div class="servicio" data-aos="fade-up">
-                    <div class="servicio-card"><span>Manicuria</span></div>
-                    <div class="descripcion">
-                        <p>Kapping, semipermanente, soft gel y nail art.</p>
-                    </div>
-                </div>
-
-                <div class="servicio" data-aos="fade-up">
-                    <div class="servicio-card"><span>Peinados</span></div>
-                    <div class="descripcion">
-                        <p>Para eventos, trenzas, recogidos y looks personalizados.</p>
-                    </div>
-                </div>
-
+        <div class="servicios">
+          <div class="servicio" data-aos="fade-up">
+            <div class="servicio-card"><span>Barbería</span></div>
+            <div class="descripcion">
+              <p>Corte clásico, fades, arreglos de barba, diseño y más.</p>
             </div>
+          </div>
+
+          <div class="servicio" data-aos="fade-up">
+            <div class="servicio-card"><span>Peluquería</span></div>
+            <div class="descripcion">
+              <p>Corte, brushing, alisado, tratamientos capilares y más.</p>
+            </div>
+          </div>
+
+          <div class="servicio" data-aos="fade-up">
+            <div class="servicio-card"><span>Pestañas</span></div>
+            <div class="descripcion">
+              <p>Extensiones clásicas, volumen ruso y lifting.</p>
+            </div>
+          </div>
+
+          <div class="servicio" data-aos="fade-up">
+            <div class="servicio-card"><span>Colorimetría</span></div>
+            <div class="descripcion">
+              <p>Balayage, iluminaciones, fantasías, y corrección de color.</p>
+            </div>
+          </div>
+
+          <div class="servicio" data-aos="fade-up">
+            <div class="servicio-card"><span>Manicuria</span></div>
+            <div class="descripcion">
+              <p>Kapping, semipermanente, soft gel y nail art.</p>
+            </div>
+          </div>
+
+          <div class="servicio" data-aos="fade-up">
+            <div class="servicio-card"><span>Peinados</span></div>
+            <div class="descripcion">
+              <p>Para eventos, trenzas, recogidos y looks personalizados.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!---NUESTRO TEAM-->
     <seccion id="nuestro-team" data-aos="fade-up">
+      <div class="container">
+        <h2 class="">Nuestro team</h2>
 
-        <div class="container">
-            <h2 class="">Nuestro team</h2>
-
-            <div class="profiles">
-                <div class="profile-section">
-                    <div class="profile" data-aos="fade-up"></div>
-                    <h3 data-aos="fade-left">Benja Nuñez <br>Barbero</h3>
-                </div>
-                <div class="profile-section">
-                    <div class="profile" data-aos="fade-up"></div>
-                    <h3 data-aos="fade-left">Candela Mendieta <br> Lashista</h3>
-                </div>
-                <!--div class="profile-section">
+        <div class="profiles">
+          <div class="profile-section">
+            <div class="profile" data-aos="fade-up"></div>
+            <h3 data-aos="fade-left">Benja Nuñez <br />Barbero</h3>
+          </div>
+          <div class="profile-section">
+            <div class="profile" data-aos="fade-up"></div>
+            <h3 data-aos="fade-left">
+              Candela Mendieta <br />
+              Lashista
+            </h3>
+          </div>
+          <!--div class="profile-section">
                     <div class="profile" data-aos="fade-up"></div>
                     <h4 data-aos="fade-left">Josué Aquino <br> Creador de <br> contenido</h4>
                 </div-->
-            </div>
         </div>
-
+      </div>
     </seccion>
 
     <!---GALERIA DE FOTOS-->
     <section id="galeria-de-fotos">
-        <div class="container">
-            <h2 data-aos="fade-up">Galería de fotos</h2>
-            <div class="container-gallery">
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber1"><img
-                            src="/img/galeria de fotos/img-7.webp" alt="barbero cortanto el pelo a cliente"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber2"><img
-                            src="/img/galeria de fotos/img-2.webp" alt="fade comprimido"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber3"><img
-                            src="/img/galeria de fotos/img-3.webp" alt="fade comprimido 2"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber4"><img
-                            src="/img/galeria de fotos/img-4.webp" alt="barbero cortanto el pelo a cliente 2"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber5"><img
-                            src="/img/galeria de fotos/img-6.webp" alt="fade corte"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber6"><img
-                            src="/img/galeria de fotos/img-8.webp" alt="barbero cortanto el pelo a cliente 3"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber7"><img
-                            src="/img/galeria de fotos/img-1.webp" alt="taper fade"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber8"><img
-                            src="/img/galeria de fotos/img-5.webp" alt="barbero cortando el pelo a cliente 4"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber9"><img
-                            src="/img/galeria de fotos/img-9.webp" alt="diseño de corte final"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber10"><img
-                            src="/img/galeria de fotos/img-14.webp" alt="barbero cortando el pelo 5"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber11"><img
-                            src="/img/galeria de fotos/img-11.webp" alt="diseño clasico corte"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber12"><img
-                            src="/img/galeria de fotos/img-12.webp" alt="corte mas barba diseño"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber13"><img
-                            src="/img/galeria de fotos/img-13.webp" alt="low fade"></a></div>
-                <div class="section-img-gallery" data-aos="fade-up"><a href="#imgbarber14"><img
-                            src="/img/galeria de fotos/img-10.webp" alt="corte mas diseño incluido"></a></div>
-            </div>
+      <div class="container">
+        <h2 data-aos="fade-up">Galería de fotos</h2>
+        <div class="container-gallery">
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber1"
+              ><img
+                src="/img/galeria de fotos/img-7.webp"
+                alt="barbero cortanto el pelo a cliente"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber2"
+              ><img
+                src="/img/galeria de fotos/img-2.webp"
+                alt="fade comprimido"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber3"
+              ><img
+                src="/img/galeria de fotos/img-3.webp"
+                alt="fade comprimido 2"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber4"
+              ><img
+                src="/img/galeria de fotos/img-4.webp"
+                alt="barbero cortanto el pelo a cliente 2"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber5"
+              ><img src="/img/galeria de fotos/img-6.webp" alt="fade corte"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber6"
+              ><img
+                src="/img/galeria de fotos/img-8.webp"
+                alt="barbero cortanto el pelo a cliente 3"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber7"
+              ><img src="/img/galeria de fotos/img-1.webp" alt="taper fade"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber8"
+              ><img
+                src="/img/galeria de fotos/img-5.webp"
+                alt="barbero cortando el pelo a cliente 4"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber9"
+              ><img
+                src="/img/galeria de fotos/img-9.webp"
+                alt="diseño de corte final"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber10"
+              ><img
+                src="/img/galeria de fotos/img-14.webp"
+                alt="barbero cortando el pelo 5"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber11"
+              ><img
+                src="/img/galeria de fotos/img-11.webp"
+                alt="diseño clasico corte"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber12"
+              ><img
+                src="/img/galeria de fotos/img-12.webp"
+                alt="corte mas barba diseño"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber13"
+              ><img src="/img/galeria de fotos/img-13.webp" alt="low fade"
+            /></a>
+          </div>
+          <div class="section-img-gallery" data-aos="fade-up">
+            <a href="#imgbarber14"
+              ><img
+                src="/img/galeria de fotos/img-10.webp"
+                alt="corte mas diseño incluido"
+            /></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <article class="light-box" id="imgbarber1">
-        <a href="#imgbarber14" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-7.webp" alt="">
-        <a href="#imgbarber2" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber14" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img src="/img/galeria de fotos/img-7.webp" alt="" />
+      <a href="#imgbarber2" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber2">
-        <a href="#imgbarber1" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-2.webp" alt="fade comprimido">
-        <a href="#imgbarber3" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber1" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img src="/img/galeria de fotos/img-2.webp" alt="fade comprimido" />
+      <a href="#imgbarber3" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber3">
-        <a href="#imgbarber2" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-3.webp" alt="fade comprimido 2">
-        <a href="#imgbarber4" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber2" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img src="/img/galeria de fotos/img-3.webp" alt="fade comprimido 2" />
+      <a href="#imgbarber4" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber4">
-        <a href="#imgbarber3" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-4.webp" alt="barbero cortanto el pelo a cliente 2">
-        <a href="#imgbarber5" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber3" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img
+        src="/img/galeria de fotos/img-4.webp"
+        alt="barbero cortanto el pelo a cliente 2"
+      />
+      <a href="#imgbarber5" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber5">
-        <a href="#imgbarber4" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-6.webp" alt="fade corte">
-        <a href="#imgbarber6" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber4" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img src="/img/galeria de fotos/img-6.webp" alt="fade corte" />
+      <a href="#imgbarber6" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber6">
-        <a href="#imgbarber5" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-8.webp" alt="barbero cortanto el pelo a cliente 3">
-        <a href="#imgbarber7" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber5" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img
+        src="/img/galeria de fotos/img-8.webp"
+        alt="barbero cortanto el pelo a cliente 3"
+      />
+      <a href="#imgbarber7" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber7">
-        <a href="#imgbarber6" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-1.webp" alt="taper fade">
-        <a href="#imgbarber8" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber6" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img src="/img/galeria de fotos/img-1.webp" alt="taper fade" />
+      <a href="#imgbarber8" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber8">
-        <a href="#imgbarber7" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-5.webp" alt="barbero cortando el pelo a cliente 4">
-        <a href="#imgbarber9" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber7" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img
+        src="/img/galeria de fotos/img-5.webp"
+        alt="barbero cortando el pelo a cliente 4"
+      />
+      <a href="#imgbarber9" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber9">
-        <a href="#imgbarber8" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-9.webp" alt="diseño de corte final">
-        <a href="#imgbarber10" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber8" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img src="/img/galeria de fotos/img-9.webp" alt="diseño de corte final" />
+      <a href="#imgbarber10" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber10">
-        <a href="#imgbarber9" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-14.webp" alt="barbero cortando el pelo 5">
-        <a href="#imgbarber11" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber9" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img
+        src="/img/galeria de fotos/img-14.webp"
+        alt="barbero cortando el pelo 5"
+      />
+      <a href="#imgbarber11" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber11">
-        <a href="#imgbarber10" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-11.webp" alt="diseño clasico corte">
-        <a href="#imgbarber12" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber10" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img src="/img/galeria de fotos/img-11.webp" alt="diseño clasico corte" />
+      <a href="#imgbarber12" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber12">
-        <a href="#imgbarber11" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-12.webp" alt="corte mas barba diseño">
-        <a href="#imgbarber13" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber11" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img
+        src="/img/galeria de fotos/img-12.webp"
+        alt="corte mas barba diseño"
+      />
+      <a href="#imgbarber13" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <article class="light-box" id="imgbarber13">
-        <a href="#imgbarber12" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-13.webp" alt="low fade">
-        <a href="#imgbarber14" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber12" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img src="/img/galeria de fotos/img-13.webp" alt="low fade" />
+      <a href="#imgbarber14" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
-
     <article class="light-box" id="imgbarber14">
-        <a href="#imgbarber13" class="next"><i class="fa-regular fa-square-caret-left"></i></a>
-        <img src="/img/galeria de fotos/img-10.webp" alt="corte mas diseño incluido">
-        <a href="#imgbarber1" class="next"><i class="fa-regular fa-square-caret-right"></i></a>
-        <a href="#galeria-de-fotos" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+      <a href="#imgbarber13" class="next"
+        ><i class="fa-regular fa-square-caret-left"></i
+      ></a>
+      <img
+        src="/img/galeria de fotos/img-10.webp"
+        alt="corte mas diseño incluido"
+      />
+      <a href="#imgbarber1" class="next"
+        ><i class="fa-regular fa-square-caret-right"></i
+      ></a>
+      <a href="#galeria-de-fotos" class="close"
+        ><i class="fa-solid fa-circle-xmark"></i
+      ></a>
     </article>
 
     <!---REDES SOCIALES-->
     <section id="redes-sociales">
-        <div class="container">
+      <div class="container">
+        <div class="redes-sociales-container">
+          <h2 data-aos="fade-left">Seguinos en <br />nuestras redes</h2>
 
-            <div class="redes-sociales-container">
-                <h2 data-aos="fade-left">Seguinos en
-                    <br>nuestras redes
-                </h2>
-
-                <div class="redes-sociales-group" data-aos="fade-right">
-
-                    <div class="red-social"><a href="https://www.instagram.com/yeshua.barberr/" rel="noopener"
-                            target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-
-                    <div class="red-social"><a href="https://www.tiktok.com/@benjabarber7" rel="noopener"
-                            target="_blank"><i class="fa-brands fa-tiktok"></i></a></div>
-
-                    <div class="red-social"><a href="https://www.youtube.com/@yeshua.barberr" rel="noopener"
-                            target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
-                </div>
+          <div class="redes-sociales-group" data-aos="fade-right">
+            <div class="red-social">
+              <a
+                href="https://www.instagram.com/yeshua.barberr/"
+                rel="noopener"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
+
+            <div class="red-social">
+              <a
+                href="https://www.tiktok.com/@benjabarber7"
+                rel="noopener"
+                target="_blank"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+
+            <div class="red-social">
+              <a
+                href="https://www.youtube.com/@yeshua.barberr"
+                rel="noopener"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
-
-
 
     <!---UBICACION-->
     <section id="ubicacion">
+      <div class="container">
+        <div class="ubicacion-container">
+          <div class="location-text" data-aos="fade-left">
+            <h2 class="">Ubicación:</h2>
+            <h3 class="">Av. Gaspar Campos 3524, San Miguel</h3>
+          </div>
 
-        <div class="container">
-
-            <div class="ubicacion-container">
-
-                <div class="location-text" data-aos="fade-left">
-                    <h2 class="">Ubicación: </h2>
-                    <h3 class="">Av. Gaspar Campos 3524, San Miguel</h3>
-                </div>
-
-
-                <div class="mapa" data-aos="fade-right">
-                    <iframe class="map-ajust" title="Ubicación del local"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2118609328104!2d-58.72833842490252!3d-34.54819085456666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd7078c6cd0b%3A0xa9b1eb1900f2ee79!2sAv.%20Gaspar%20Campos%203524%2C%20B1663%20FDT%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1737321173068!5m2!1ses-419!2sar"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+          <div class="mapa" data-aos="fade-right">
+            <iframe
+              class="map-ajust"
+              title="Ubicación del local"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2118609328104!2d-58.72833842490252!3d-34.54819085456666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd7078c6cd0b%3A0xa9b1eb1900f2ee79!2sAv.%20Gaspar%20Campos%203524%2C%20B1663%20FDT%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1737321173068!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-
+      </div>
     </section>
 
-
     <footer id="encabezado">
-        <div class="container">
-
-            <div class="items-end">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobre-nosotros">Nosotros</a></li>
-                    <li><a href="nuestros-servicios">Servicios</a></li>
-                    <li><a href="nuestro-team">Team</a></li>
-                    <li><a href="contacto">Contacto</a></li>
-                </ul>
-            </div>
-
-
-            <div class="redes-end">
-                <h4 style="color:white">Seguinos en nuestras redes!</h4>
-                <ul class="redes-items-end">
-
-                    <li><a href="https://www.instagram.com/yeshua.barberr/" aria-label="Instagram de Yeshua Barber" rel="noopener" target="_blank">
-
-                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                          
-
-                        </a></li>
-
-                    <li><a href="https://www.tiktok.com/@benjabarber7" aria-label="Tiktok de Yeshua Barber" rel="noopener" target="_blank">
-
-                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                            
-
-                        </a></li>
-
-                    <li><a href="https://www.youtube.com/@yeshua.barberr" aria-label="Youtube de Yeshua Barber" rel="noopener" target="_blank">
-
-                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                           
-
-                        </a></li>
-                </ul>
-            </div>
-
+      <div class="container">
+        <div class="items-end">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-nosotros">Nosotros</a></li>
+            <li><a href="nuestros-servicios">Servicios</a></li>
+            <li><a href="nuestro-team">Team</a></li>
+            <li><a href="contacto">Contacto</a></li>
+          </ul>
         </div>
-        <p>&copy; Yeshua Barber 2025</p>
+
+        <div class="redes-end">
+          <h4 style="color: white">Seguinos en nuestras redes!</h4>
+          <ul class="redes-items-end">
+            <li>
+              <a
+                href="https://www.instagram.com/yeshua.barberr/"
+                aria-label="Instagram de Yeshua Barber"
+                rel="noopener"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.tiktok.com/@benjabarber7"
+                aria-label="Tiktok de Yeshua Barber"
+                rel="noopener"
+                target="_blank"
+              >
+                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.youtube.com/@yeshua.barberr"
+                aria-label="Youtube de Yeshua Barber"
+                rel="noopener"
+                target="_blank"
+              >
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>&copy; Yeshua Barber 2025</p>
     </footer>
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        window.addEventListener("load", () => {
-            AOS.init({
-                duration: 1000,
-                once: true
-            });
+      window.addEventListener("load", () => {
+        AOS.init({
+          duration: 1000,
+          once: true,
         });
+      });
     </script>
-</body>
-
+  </body>
 </html>
