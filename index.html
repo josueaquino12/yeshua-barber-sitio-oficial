@@ -22,8 +22,6 @@
       href="favicon/logo-oficial-yesha-barber.ico"
     />
 
-    <link rel="stylesheet" href="styles/styles.css" />
-
     <link
       rel="preload"
       as="image"
@@ -51,9 +49,29 @@
       />
     </noscript>
 
-
+    <!--link rel="stylesheet" href="styles/styles.css" />
       <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" /-->
+
+    <link
+      rel="preload"
+      href="/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/css/all.min.css" />
+    </noscript>
+
+    <link
+      rel="preload"
+      href="/styles/styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/styles/styles.css" />
+    </noscript>
 
     <!--link
       rel="preload"
