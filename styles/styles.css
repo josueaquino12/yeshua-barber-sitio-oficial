@@ -22,6 +22,18 @@ body{
   --color3: rgba(70, 68, 69, 0.637);
 }
 
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; /* ¡Aquí es donde debes agregarlo! */
+  src: url('../fonts/fa-brands-400.woff2') format('woff2');
+  /* ... otras fuentes si las tienes */
+}
+
+
+
   #portada-principal{
     height: 100vh;
     min-height: 600px;
@@ -95,6 +107,7 @@ header {
     padding: 0;
     overflow: hidden; 
     font-family: "Cinzel Decorative", serif;
+    
 }
 
 
