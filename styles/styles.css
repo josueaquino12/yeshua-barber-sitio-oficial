@@ -1,121 +1,121 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
-body{
-    background-color: black;   
+body {
+  background-color: black;
 }
 
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-:root{
+:root {
   --color1: #ffff;
   --color2: rgba(151, 152, 156, 0.726);
   --color3: rgba(70, 68, 69, 0.637);
 }
 
+#portada-principal {
+  height: 100vh;
+  min-height: 600px;
+  /*background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-principal/img-portada.webp') no-repeat center center/cover;*/
+  background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%),
+    url("/img/portada-principal/img-portada.webp") no-repeat center center /
+      cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
 
-  #portada-principal{
-    height: 100vh;
-    min-height: 600px;
-    /*background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-principal/img-portada.webp') no-repeat center center/cover;*/
-    background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-principal/img-portada.webp') no-repeat center center / cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    flex-direction: column;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  #portada-principal::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: opacity 1.5s ease-in-out;
-    opacity: 0;
-    z-index: -1;
+#portada-principal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 0;
+  z-index: -1;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.3s ease-in-out;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .logo-resp {
   width: 170px; /* O el ancho que necesites */
   height: auto; /* Para mantener la proporción */
-  
 }
 
 /*NAVBAR PARA HABILITAR TRANSPARENCIA AL DESLIZAR*/
 .header-scrolled {
-  background: rgba(0, 0, 0, 0.8); 
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
 }
 
-.abrir-menu, .cerrar-menu{
+.abrir-menu,
+.cerrar-menu {
   display: none;
 }
 
-
-.nav-items{
+.nav-items {
   list-style-type: none;
   display: flex;
   gap: 1rem;
 }
 
 .nav-items {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; 
-    font-family: "Cinzel Decorative", serif;
-    
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Cinzel Decorative", serif;
 }
-
 
 #portada-principal .redes-items ul {
   list-style-type: none;
   display: flex;
 }
 
-#portada-principal .redes-items ul li a i{
-   color: white;
-   text-decoration: none;
- }
+#portada-principal .redes-items ul li a i {
+  color: white;
+  text-decoration: none;
+}
 
 .nav-items li {
   float: left;
 }
 
 .nav-items li a {
- /* display: block;*/
+  /* display: block;*/
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -123,24 +123,22 @@ header {
 }
 
 .nav-items li a:hover {
-text-decoration: 3px solid yellow underline;
+  text-decoration: 3px solid yellow underline;
 }
 
-
-.text_first_title{
+.text_first_title {
   margin-top: 80px;
   color: white;
-  font-family: "Poetsen One", serif; 
+  font-family: "Poetsen One", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 700%;
   margin-bottom: 80px;
 }
 
-
 /*BOTON*/
 
-.button-nav{
+.button-nav {
   background-color: rgba(104, 114, 121, 0.637);
   border: 1px solid rgb(188, 189, 188);
   text-align: center;
@@ -149,94 +147,83 @@ text-decoration: 3px solid yellow underline;
   font-size: 110%;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 
-.button-nav:hover{
+.button-nav:hover {
   background-color: rgba(67, 74, 78, 0.637);
   color: white;
   transition: 0.5s;
 }
 
-  .container {
-    max-width: 1400px;
-    margin: auto;
-  }
-  /*-----SOBRE NOSOTROS ------*/
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+/*-----SOBRE NOSOTROS ------*/
 
-
-  #sobre-nosotros .container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /*margin-top: 50px;
+#sobre-nosotros .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /*margin-top: 50px;
     margin-bottom: 50px;*/
-    padding: 50px 0;
-    
-  }
-
-  #sobre-nosotros .img-local-sobre-nosotros{
-   background-image: url('/img/sobre-nosotros.webp');
-   background-size: cover;
-   background-position: center center;
-   width: 400px;
-   height: 500px;
-  }
-
-
-  #sobre-nosotros h2{
-    font-family: "Cinzel Decorative", serif;
-    font-size: 2.5em;
-    color: white;
-   }
- 
-
-  .texto-sobre-nosotros{
-        margin-top: 20px;
-        max-width: 600px;
-        text-align: initial;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: white;
-        font-size: 1.3em;
-        font-family: "Cinzel Decorative", serif;
-  }
-
-
-  /*-----NUESTRO SERVICIOS------*/
-
-
- 
-
-   #nuestros-servicios{
-   background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-servicios.webp') no-repeat center center/cover fixed;  
-   }
-
-  #nuestros-servicios h2 {
-     color: white;
-     font-family: "Cinzel Decorative", serif;
-     font-size: 3.5em;
-     text-align: center;
-     text-shadow: 1px 1px 1px white;
-  }
-
-  #nuestros-servicios .container{
-    padding: 20px;
-  }
-
-
-
-
-  #nuestros-servicios .servicios {
-    display: grid;
-    gap: 50px;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    padding: 50px;
+  padding: 50px 0;
 }
 
+#sobre-nosotros .img-local-sobre-nosotros {
+  background-image: url("/img/sobre-nosotros.webp");
+  background-size: cover;
+  background-position: center center;
+  width: 400px;
+  height: 500px;
+}
+
+#sobre-nosotros h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2.5em;
+  color: white;
+}
+
+.texto-sobre-nosotros {
+  margin-top: 20px;
+  max-width: 600px;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 1.3em;
+  font-family: "Cinzel Decorative", serif;
+}
+
+/*-----NUESTRO SERVICIOS------*/
+
+#nuestros-servicios {
+  background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%),
+    url("/img/portada-servicios.webp") no-repeat center center/cover fixed;
+}
+
+#nuestros-servicios h2 {
+  color: white;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 3.5em;
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+}
+
+#nuestros-servicios .container {
+  padding: 20px;
+}
+
+#nuestros-servicios .servicios {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  padding: 50px;
+}
 
 #nuestros-servicios .servicio {
   display: flex;
@@ -245,7 +232,6 @@ text-decoration: 3px solid yellow underline;
   gap: 20px;
   text-align: center;
 }
-
 
 #nuestros-servicios .servicio-card {
   width: 250px;
@@ -276,14 +262,25 @@ text-decoration: 3px solid yellow underline;
   z-index: 0;
 }
 
-
 /* Agregar imágenes de fondo */
-.servicio:nth-child(1) .servicio-card::before { background-image: url('/img/servicios/barberia.webp'); }
-.servicio:nth-child(2) .servicio-card::before { background-image: url('/img/servicios/peluqueria.webp'); }
-.servicio:nth-child(3) .servicio-card::before { background-image: url('/img/servicios/pestañas-servicio.webp'); }
-.servicio:nth-child(4) .servicio-card::before { background-image: url('/img/servicios/colorimetria.webp'); }
-.servicio:nth-child(5) .servicio-card::before { background-image: url('/img/servicios/manicuria.webp'); }
-.servicio:nth-child(6) .servicio-card::before { background-image: url('/img/servicios/peinados.webp'); }
+.servicio:nth-child(1) .servicio-card::before {
+  background-image: url("/img/servicios/barberia.webp");
+}
+.servicio:nth-child(2) .servicio-card::before {
+  background-image: url("/img/servicios/peluqueria.webp");
+}
+.servicio:nth-child(3) .servicio-card::before {
+  background-image: url("/img/servicios/pestañas-servicio.webp");
+}
+.servicio:nth-child(4) .servicio-card::before {
+  background-image: url("/img/servicios/colorimetria.webp");
+}
+.servicio:nth-child(5) .servicio-card::before {
+  background-image: url("/img/servicios/manicuria.webp");
+}
+.servicio:nth-child(6) .servicio-card::before {
+  background-image: url("/img/servicios/peinados.webp");
+}
 
 /* Efecto hover */
 #nuestros-servicios .servicio-card:hover::before {
@@ -305,146 +302,139 @@ text-decoration: 3px solid yellow underline;
   color: white;
 }
 
-  /*-----NUESTRO TEAM------*/
+/*-----NUESTRO TEAM------*/
 
-
-  #nuestro-team {
-    background-color: #A39A9A;
-  }
-
-  #nuestro-team .container{
-    padding: 20px;
-    
-  }
-
- #nuestro-team h2 {
-     color: white;
-     font-family: "Cinzel Decorative", serif;
-     font-size: 3.5em;
-     text-align: center;   
- }
-
-  #nuestro-team .profiles {
-     display: flex;
-     justify-content: space-evenly;
-     align-items: flex-start;
-     margin-top: 20px;
-     margin-bottom: 20px;
-  }
-
-
-
-  #nuestro-team  .profile-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #nuestro-team  .profile-section h3{
-  
-    color: white;
-    text-align: center;
-    font-family: "Cinzel Decorative", serif;
-    font-size: 1.5em;
-    padding-top: 10px;
-  }
-  
-  #nuestro-team  .profile-section .profile{
-    background-color:transparent;
-    overflow: hidden;
-    width: 150px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; 
-  }
-
-
-  #nuestro-team  .profile-section .profile::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease-in-out;
-    z-index: 0;
-  }
-  
-
-  #nuestro-team  .profile-section:nth-child(1) .profile::before { background-image: url('/img/profiles/benja-profile.webp'); }
-  #nuestro-team  .profile-section:nth-child(2) .profile::before { background-image: url('/img/profiles/cande-profile.webp'); }
-
-
-  #nuestro-team .profile:hover::before {
-    transform: scale(1.2);
-  }
-
-
-
-/*-----GALERIA DE FOTOS------*/
-
-#galeria-de-fotos{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/img/portada-2.0.webp') no-repeat center center/cover fixed;
-  /*background-color: #A39A9A;*/
+#nuestro-team {
+  background-color: #a39a9a;
 }
 
-#galeria-de-fotos .container{
+#nuestro-team .container {
   padding: 20px;
 }
 
-#galeria-de-fotos h2{
+#nuestro-team h2 {
+  color: white;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#nuestro-team .profiles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#nuestro-team .profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#nuestro-team .profile-section h3 {
+  color: white;
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
+#nuestro-team .profile-section .profile {
+  background-color: transparent;
+  overflow: hidden;
+  width: 150px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#nuestro-team .profile-section .profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+#nuestro-team .profile-section:nth-child(1) .profile::before {
+  background-image: url("/img/profiles/benja-profile.webp");
+}
+#nuestro-team .profile-section:nth-child(2) .profile::before {
+  background-image: url("/img/profiles/cande-profile.webp");
+}
+
+#nuestro-team .profile:hover::before {
+  transform: scale(1.2);
+}
+
+/*-----GALERIA DE FOTOS------*/
+
+#galeria-de-fotos {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("/img/portada-2.0.webp") no-repeat center center/cover fixed;
+  /*background-color: #A39A9A;*/
+}
+
+#galeria-de-fotos .container {
+  padding: 20px;
+}
+
+#galeria-de-fotos h2 {
   color: white;
   text-align: center;
   font-size: 3.5em;
   font-family: "Cinzel Decorative", serif;
 }
 
-#galeria-de-fotos .container-gallery{
+#galeria-de-fotos .container-gallery {
   margin: 0 auto;
-  display : grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   padding: 40px 0;
 }
 
-.section-img-gallery img{
+.section-img-gallery img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.section-img-gallery:nth-child(1){
+.section-img-gallery:nth-child(1) {
   grid-column-start: span 2;
 }
 
-
-.section-img-gallery:nth-child(6){
+.section-img-gallery:nth-child(6) {
   grid-column-start: span 2;
 }
 
-.section-img-gallery:nth-child(9){
+.section-img-gallery:nth-child(9) {
   grid-column-start: span 2;
 }
-.section-img-gallery:nth-child(10){
+.section-img-gallery:nth-child(10) {
   grid-column-start: span 2;
 }
-
 
 /*-----------------Lightbox para aplicar el paso de las imagenes abriendo un popup-------------------*/
 
-.light-box{
-  position: fixed; 
+.light-box {
+  position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100vh;
   z-index: 1000;
@@ -460,7 +450,6 @@ text-decoration: 3px solid yellow underline;
 body.loaded .light-box:target {
   display: flex; /* se muestra solo cuando el sitio terminó de cargar y se hace clic */
   transform: scale(1);
-
 }
 
 .light-box img {
@@ -481,7 +470,7 @@ body.loaded .light-box:target {
   border-radius: 8px;
   max-width: 500px;
   width: 90%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-box .close {
@@ -514,42 +503,41 @@ body.loaded .light-box:target {
 }
 /*-----REDES SOCIALES------*/
 
-#redes-sociales{
-  background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%), url('/img/portada-3.webp') no-repeat center center/cover fixed;  
+#redes-sociales {
+  background: linear-gradient(180deg, var(--color3) 0%, var(--color2) 100%),
+    url("/img/portada-3.webp") no-repeat center center/cover fixed;
 }
 
-#redes-sociales h2 .container{
+#redes-sociales h2 .container {
   padding: 20px;
 }
 
-
-#redes-sociales .redes-sociales-container{
+#redes-sociales .redes-sociales-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 100px 0;
-
 }
 
-#redes-sociales h2{
+#redes-sociales h2 {
   color: white;
   text-align: start;
   font-size: 3.5em;
   font-family: "Cinzel Decorative", serif;
 }
 
-#redes-sociales  .redes-sociales-container .redes-sociales-group{
+#redes-sociales .redes-sociales-container .redes-sociales-group {
   display: flex;
   justify-content: center;
   align-items: center;
   /*margin-left: 60px;*/
 }
 
-#redes-sociales .red-social a i{
+#redes-sociales .red-social a i {
   color: white;
   margin-left: 20px;
   font-size: 4.3em;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 #redes-sociales .red-social:nth-of-type(1) a i:hover {
@@ -569,11 +557,11 @@ body.loaded .light-box:target {
 
 /*-----CONTACTO------*/
 
-#contacto{
-  background-color: #A39A9A;
+#contacto {
+  background-color: #a39a9a;
 }
 
-#contacto .container{
+#contacto .container {
   padding: 20px;
 }
 
@@ -584,26 +572,25 @@ body.loaded .light-box:target {
   flex-direction: column;
 }*/
 
-#contacto .forms-recepcion{
+#contacto .forms-recepcion {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-
-#contacto form{
- width: 500px;
+#contacto form {
+  width: 500px;
 }
 
-#contacto h2{
+#contacto h2 {
   color: white;
   text-align: center;
   font-size: 3.5em;
   font-family: "Cinzel Decorative", serif;
 }
 
-input[type=text], select {
+input[type="text"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -615,18 +602,18 @@ input[type=text], select {
   outline: none;
 }
 
-label{
-  font-family:  "Cinzel Decorative", serif;
+label {
+  font-family: "Cinzel Decorative", serif;
   font-weight: bold;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   border: 3px solid #555;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -635,7 +622,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -652,71 +639,66 @@ textarea {
 
 /*-----UBICACION-----*/
 
-#ubicacion{
+#ubicacion {
   /*background-color: #A39A9A;*/
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/img/portada-4.webp') no-repeat center center/cover fixed;  
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/img/portada-4.webp") no-repeat center center/cover fixed;
 }
 
-#ubicacion h2 .container{
+#ubicacion h2 .container {
   padding: 20px;
 }
 
-.ubicacion-container{
+.ubicacion-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding : 50px;
+  padding: 50px;
 }
 
-#ubicacion h2{
+#ubicacion h2 {
   color: white;
   text-align: center;
   font-size: 3.5em;
   font-family: "Cinzel Decorative", serif;
 }
 
-#ubicacion h3{
+#ubicacion h3 {
   color: white;
   text-align: center;
   font-family: "Cinzel Decorative", serif;
 }
 
-#ubicacion .mapa{
-  display:flex;
+#ubicacion .mapa {
+  display: flex;
   justify-content: center;
-  
 }
 
-.map-ajust{
-  width:600px; 
-  height:450px;
+.map-ajust {
+  width: 600px;
+  height: 450px;
 }
 
 /*-------FOOTER-------*/
-
 
 #encabezado {
   background-color: #424040;
 }
 
 #encabezado .container {
-
-   padding: 20px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
 
 #encabezado ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
-
 
 #encabezado .items-end {
   width: 500px;
@@ -726,19 +708,17 @@ textarea {
   display: block;
   color: white;
   padding: 2px;
-  font-family:  "Cinzel Decorative", serif;
+  font-family: "Cinzel Decorative", serif;
   text-decoration: none;
 }
 
-
 #encabezado h4 {
-  font-family:  "Cinzel Decorative", serif;
+  font-family: "Cinzel Decorative", serif;
 }
 
-#encabezado .redes-end{
+#encabezado .redes-end {
   margin-top: 30px;
 }
-
 
 #encabezado .redes-items-end {
   margin-top: 25px;
@@ -754,145 +734,135 @@ textarea {
 }
 
 #encabezado p {
-  color : white;
-  font-family:  "Cinzel Decorative", serif;
+  color: white;
+  font-family: "Cinzel Decorative", serif;
   text-align: center;
 }
-
-
-
 
 /*--------------------RESPONSIVE-----------------------------*/
 
 @media screen and (max-width: 760px) {
-  
-   
-   header {
-        flex-direction: row;
-        align-items: center;
-        
-    }
-  
-    .logo-resp{
-      width: 150px;
-    }
-
-    .abrir-menu, .cerrar-menu{
-      border: 0;
-      background-color: transparent;
-      cursor: pointer;
-      color: white;
-    }
-
-    .abrir-menu{
-      display: flex;
-      font-size: 3.25em;
-      margin-right: 20px; 
-    }
-
-    .cerrar-menu{
-      display: none;
-      font-size: 3.25em;
-      justify-content: center;
-      align-items: end;
-      margin-right: 50px;
-      position: absolute;
-      top: 70px;
-      right: 0;
-     }
-
-   
-    .nav-items {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: end;
-      position: fixed;
-      top: 0;
-      right: 0;
-      /*background: rgba(0, 0, 0, 0.8);*/
-      background: rgba(0, 0, 0, 0.8);
-      gap: 2rem;
-      width: 50%;
-      height: 100vh;
-      z-index: 1000;
+  header {
+    flex-direction: row;
+    align-items: center;
   }
 
-  
+  .logo-resp {
+    width: 150px;
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+  }
+
+
+  .abrir-menu {
+    display: flex;
+    font-size: 3.25em;
+    position: absolute; 
+    top: 65px;
+    right: 20px; 
+    margin: 0; 
+    z-index: 1001;
+  }
+
+  .cerrar-menu {
+    display: none;
+    font-size: 3.25em;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 65px;
+    right: 20px;
+    margin: 0; 
+    z-index: 1002;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /*background: rgba(0, 0, 0, 0.8);*/
+    background: rgba(0, 0, 0, 0.8);
+    gap: 2rem;
+    width: 50%;
+    height: 100vh;
+    z-index: 1000;
+  }
+
   .nav-items.visible {
-      display: flex;
+    display: flex;
   }
   .nav-items.visible + .cerrar-menu {
-      display: flex;
-      position: fixed; 
-      z-index: 1001; 
+    display: flex;
+    position: fixed;
+    z-index: 1001;
   }
-    
-    #portada-principal .container-text{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-   
-    
-    .text_first_title{
-      margin-top: 80px;
-      color: white;
-      font-family: "Poetsen One", serif; 
-      font-weight: 400;
-      font-style: normal;
-      font-size: 400%;
-      margin-bottom: 80px;
-    }
 
-  
+  #portada-principal .container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text_first_title {
+    margin-top: 80px;
+    color: white;
+    font-family: "Poetsen One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 400%;
+    margin-bottom: 80px;
+  }
+
   /*BOTON*/
-    
-    .button-nav{
-      
-      font-size: 90%;
-      padding: 15px;
-      border-radius: 10px;
-    
-    }
-    
 
-    /*SOBRE NOSOTROS*/
+  .button-nav {
+    font-size: 90%;
+    padding: 15px;
+    border-radius: 10px;
+  }
 
-    #sobre-nosotros .container{
-      display: flex;
-      flex-direction: column
-    }
+  /*SOBRE NOSOTROS*/
 
-    #sobre-nosotros h2{
-      font-family: "Cinzel Decorative", serif;
-      text-align: center;
-      font-size: 2.5em;
-      color: white;
-      margin-top: 20px;
-     /* margin-left: 40px*/
-     }
-   
-  
-    .texto-sobre-nosotros{
-          margin-top: 0px;
-          max-width: 600px;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          color: white;
-          font-size: 1.3em;
-          font-family: "Cinzel Decorative", serif;
-          padding: 20px;
-    }
+  #sobre-nosotros .container {
+    display: flex;
+    flex-direction: column;
+  }
 
-   /*-----NUESTRO SERVICIOS------*/
-  
+  #sobre-nosotros h2 {
+    font-family: "Cinzel Decorative", serif;
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin-top: 20px;
+    /* margin-left: 40px*/
+  }
 
+  .texto-sobre-nosotros {
+    margin-top: 0px;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 1.3em;
+    font-family: "Cinzel Decorative", serif;
+    padding: 20px;
+  }
 
+  /*-----NUESTRO SERVICIOS------*/
 
-   #nuestros-servicios .servicios{
+  #nuestros-servicios .servicios {
     display: grid;
     gap: 50px;
     grid-template-columns: auto;
@@ -903,17 +873,15 @@ textarea {
     background-position-y: 0;
   }
 
-  
-   /*---- REDES SOCIALES------*/
+  /*---- REDES SOCIALES------*/
 
-  #redes-sociales h2{
+  #redes-sociales h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
-    
   }
 
-  #redes-sociales  .redes-sociales-container {
+  #redes-sociales .redes-sociales-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -921,36 +889,32 @@ textarea {
     /*margin-left: 60px;*/
   }
 
+  /*-----UBICACIÓN------*/
 
-     /*-----UBICACIÓN------*/
+  .ubicacion-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+  }
 
-     .ubicacion-container{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction: column;
-      padding : 50px;
-    }
-    
-    #ubicacion h3{
-     margin-bottom: 20px;
-    }
+  #ubicacion h3 {
+    margin-bottom: 20px;
+  }
 
+  .map-ajust {
+    width: 400px;
+  }
 
-   .map-ajust{
-     width: 400px;
-    }
-    
-     /*-----UBICACIÓN------*/
+  /*-----UBICACIÓN------*/
 
-   #encabezado h4 {
-      font-family:  "Cinzel Decorative", serif;
-      text-align: center;
-    }
+  #encabezado h4 {
+    font-family: "Cinzel Decorative", serif;
+    text-align: center;
+  }
 
-    #encabezado .redes-items-end li a { 
-      font-size: 30px;
-    }
-
-
+  #encabezado .redes-items-end li a {
+    font-size: 30px;
+  }
 }
