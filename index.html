@@ -49,10 +49,10 @@
       />
     </noscript>
 
-    <!--link rel="stylesheet" href="styles/styles.css" />
-      <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/all.min.css" /-->
+   
     <link rel="stylesheet" href="styles/styles.css" />
+
+    
     <link
       rel="preload"
       href="/css/all.min.css"
@@ -962,8 +962,8 @@
       <p>&copy; Yeshua Barber 2025</p>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
       window.addEventListener("load", () => {
         AOS.init({
@@ -973,7 +973,7 @@
       });
     </script>
 
-    <script>
+    <script >
       document.querySelectorAll(".light-box img").forEach((img) => {
         img.onerror = function () {
           // Si falla, intentamos cargar una versión .jpg como backup
